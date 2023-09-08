@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ .input{
+    border: 1px solid lightgray;
+    
+    border-radius: 10px;
+}
+.sm-input{
+    width: 50%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.cv-input{
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.sizeCard{
+    width: 45%;
+}
+.space{
+    letter-spacing: 0.2em;
+    padding-top: 30px;
+}
+.space1{
+    top:90px;
+}
+
+/* .txt{
+    font-size: max(30px,15px);
+}  */
+/* .cards{
+    position: absolute;
+    left: 10rem;
+    top: 10rem;
+} */
+/* .h{
+    width: 80% !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+} */

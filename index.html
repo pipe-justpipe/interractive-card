@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="dist/output.css">
+    <title>Pipe's Interactive card details form</title>
+</head>
+<body class="bg-gray-100">
+<div class="flex flex-col sm:flex-row">
+    <!-- Card Display Section -->
+    <div class="cards lg:w-auto w-full grid grid-flow-row sm:w-96  bg-[url('/images/bg-main-mobile.png')] sm:bg-[url('/images/bg-main-desktop.png')] bg-no-repeat bg-cover sm:h-screen">
+        <div class="ml-8 sm:ml-20  relative order-2 sm:order-1 w-96 self-end"> <!-- Adjusted margin here -->
+            <img class="self-end h-auto" src="images/bg-card-front.png" alt="card-front image"/>
+            <div class="absolute p-6 space-y-5 top-0 w-full">
+                <img class="w-1/4 " src="images/card-logo.svg" alt="card-logo"/>
+                <h1 class="text-white space text-2xl ">0000 0000 0000 0000</h1>
+                <div class="flex justify-between text-white text-center">
+                    <h5> JANE APPLESEED</h5>
+                    <h5>00/00</h5>
+                </div>
+            </div>
+        </div>
+        <div class="justify-end order-1 sm:order-2 h-auto ml-6 sm:ml-32 relative w-96"> <!-- Adjusted margin here -->
+            <img class="mt-10 h-auto" src="images/bg-card-back.png" alt="card-back image"/>
+            <div class="absolute space1 text-white text-end pt-10 pr-16 w-full">
+                <h5>000</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="grid items-center justify-center w-auto sm:w-full ml-auto mr-auto">
+        <form class="grid grid-flow-row gap-4 ml-auto mr-auto justify-center items-center w-3/4">
+            <label>CARDHOLDER NAME</label>
+            <input class="input p-3 mb-4 w-full" type="text" placeholder="e.g. Jane Appleseed"/>
+
+            <label>CARD NUMBER</label>
+            <input class="input p-3 mb-4 w-full" type="number" placeholder="e.g. 1234 5678 9123 0000"/>
+
+            <div class="flex flex-row">
+                <div class="flex flex-col w-1/2">
+                    <label>EXP. DATE (MM/YY)</label>
+                    <div class="flex mr-3">
+                        <input class="input p-3 w-1/2 mr-3" type="number" placeholder="MM"/>
+                        <input class="input p-3 w-1/2" type="number" placeholder="YY"/>
+                    </div>
+                </div>
+                <div class="flex flex-col w-1/2">
+                    <label>CVC</label>
+                    <input class="input p-3 mb-4 w-full" type="number" placeholder="e.g. 123"/>
+                </div>
+            </div>
+            <input class="bg-custom-voilet p-3 rounded-lg text-white w-full" value="Confirm" type="button">
+        </form>
+    </div>
+</div>
+
+<!-- Attribution Section -->
+<div class="text-xs text-center mt-8">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-500">Frontend Mentor</a>.
+    Coded by <a href="#" class="text-blue-500">Your Name Here</a>.
+</div>
+
+</body>
+</html>
