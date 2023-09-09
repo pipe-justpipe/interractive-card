@@ -5,11 +5,12 @@ module.exports = {
     extend: {
       colors:{
         'custom-voilet':'hsl(278, 68%, 11%)'
-      },      screens: {
-        'lg': '375px',
-        // => @media (min-width: 992px) { ... }
-    },}
+      },  
+    },
+  },    screens: {
+    'sm': '1000px', // Change this value to my desired width
   },
+
   plugins: [],
 }
 
