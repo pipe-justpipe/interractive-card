@@ -979,6 +979,10 @@ video {
     order: 2;
   }
 
+  .md\:h-4\/5 {
+    height: 80%;
+  }
+
   .md\:bg-\[url\(\'\/images\/bg-main-desktop\.png\'\)\] {
     background-image: url('/images/bg-main-desktop.png');
   }
