@@ -7,10 +7,7 @@ module.exports = {
         'custom-voilet':'hsl(278, 68%, 11%)'
       },  
     },
-  },    screens: {
-    'sm': '1000px', // Change this value to my desired width
-  },
-
+  }, 
   plugins: [],
 }
 

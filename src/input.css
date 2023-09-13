@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
- .input{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&family=Space+Grotesk:wght@500&display=swap');
+ 
+.input{
     border: 1px solid lightgray;
     
     border-radius: 10px;
@@ -22,11 +23,10 @@
 }
 .space{
     letter-spacing: 0.2em;
-    padding-top: 30px;
 }
-.space1{
+/* .space1{
     top:90px;
-}
+} */
 
 
 /* .txt{

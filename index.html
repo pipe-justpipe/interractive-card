@@ -3,39 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="dist/output.css">
     <title>Pipe's Interactive card details form</title>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-[Space Grotesk]">
 <div class="flex flex-col lg:flex-row">
     <!-- Card Display Section -->
-   <div class="w-full lg:w-1/2">
-    <div class="cards w-full grid grid-flow-row lg:w-1/2  bg-[url('/images/bg-main-mobile.png')] lg:bg-[url('/images/bg-main-desktop.png')] bg-no-repeat bg-cover lg:h-screen">
-        <div class="ml-8 lg:ml-20 -mt-24 z-10 lg:-mt-0 relative order-2 -mb-12 lg:-mb-0  lg:order-1 w-4/5 lg:w-4/5 self-end"> <!-- Adjusted margin here -->
-            <img class="self-end h-auto card-front w-full lg:w-full" src="images/bg-card-front.png" alt="card-front image"/>
-            <div class="absolute p-6 space-y-2 md:space-y-20 lg:space-y-5 top-0 w-full">
-                <img class="w-1/4 md:w-1/5 lg:w-1/4 " src="images/card-logo.svg" alt="card-logo"/>
-                <h1 class="text-white space mt-0 md:mt-96 lg:mt-0 text-xl md:text-3xl lg:text-2xl ">0000 0000 0000 0000</h1>
-                <div class="flex justify-between text-white text-xl md:text-2xl lg:text-lg text-center">
+    <div class="cards grid grid-flow-row w-full lg:w-96 bg-[url('/images/bg-main-mobile.png')] md:bg-[url('/images/bg-main-desktop.png')] bg-no-repeat bg-cover bg-center h-2/5 lg:h-screen">
+        <div class="mx-auto ml-10 lg:ml-20 relative lg:-mt-0 max-[1023px]:w-[500px] max-[420px]:w-52 max-[330px]:w-44 max-[660px]:w-72 max-[330px]:mr-2 lg:-mb-0 max-[660px]:-mt-12 max-[330px]:-mt-6 -mt-24 order-2 z-10 -mb-12 md:order-2 lg:order-1 lg:w-96 self-end"> <!-- Added max-w class -->
+            <img class="self-end h-auto w-full" src="images/bg-card-front.png" alt="card-front image"/>
+            <div class="absolute p-6 max-[420px]:p-1 max-[660px]:p-2 max-[420px]:space-y-3 max-[330px]:space-y-1 max-[660px]:space-y-4  space-y-5 top-0 w-full">
+                <img class="w-1/4 max-[420px]:w-7 max-[330px]:w-5 " src="images/card-logo.svg" alt="card-logo"/>
+                <h1 class="text-white space max-[660px]:text-lg max-[420px]:text-sm max-[330px]:text-[12px] max-[420px]:pt-0 max-[660px]:pt-1 pt-[30px] text-2xl ">0000 0000 0000 0000</h1>
+                <div class="flex justify-between max-[420px]:text-sm max-[330px]:text-[12px] max-[660px]:text-lg text-white text-center ">
                     <h5> JANE APPLESEED</h5>
                     <h5>00/00</h5>
                 </div>
             </div>
         </div>
-        <div class="justify-center lg:justify-end order-1 z-0 lg:order-2 h-auto ml-16 lg:ml-32 relative w-4/5"> <!-- Adjusted margin here -->
-            <img class="mt-10 w-full h-auto " src="images/bg-card-back.png" alt="card-back image"/>
-            <div class="absolute space1 top-0 bottom-0 right-0 left-0  text-white text-end w-4/5">
-                <h5>000</h5>
+        <div class="justify-end mx-auto max-[1023px]:w-[500px] max-[300px]:mr-8 mr-16 lg:mr-0 lg:ml-40 order-1 max-[330px]:w-44 max-[420px]:w-52 max-[660px]:w-72 md:order-1 z-0 relative lg:order-2 lg:w-96"> <!-- Added max-w class -->
+            <img class="mt-10 w-full h-auto" src="images/bg-card-back.png" alt="card-back image"/>
+            <div class="absolute top-[100px] max-[330px]:top-[50px] max-[1023px]:top-[130px] max-[660px]:top-[75px] max-[420px]:top-[60px] max-[420px]:pr-[30px] text-white flex justify-end p-7 pr-14 w-full">
+                <h5 class=" max-[330px]:text-[12px] max-[420px]:text-sm  max-[660px]:text-lg">000</h5>
             </div>
         </div>
     </div>
 
-   </div>
     <!-- Form Section -->
-    <div class="grid items-center justify-center mt-24 lg:mt-0 w-auto lg:w-1/2 ml-auto mr-auto">
-        <form class="grid grid-flow-row gap-4 ml-auto mr-auto justify-center items-center w-full">
+    <div class="grid items-center justify-center mt-24 lg:mt-0 ml-auto mr-auto">
+        <form class="grid grid-flow-row gap-4 justify-center items-center lg:mx-auto max-[680px]:mx-auto max-[680px]:w-4/5 w-full max-[1025px]:w-full max-[1150px]:w-1/2 max-[1360px]:w-2/3">
+            <!-- ... (form content) -->
             <label>CARDHOLDER NAME</label>
             <input class="input p-3 mb-4 w-full" type="text" placeholder="e.g. Jane Appleseed"/>
 
@@ -44,8 +42,8 @@
 
             <div class="flex flex-row">
                 <div class="flex flex-col w-1/2">
-                    <label>EXP. DATE (MM/YY)</label>
-                    <div class="flex mr-3">
+                    <label class="max-[350px]:text-[12px] max-[350px]:mt-[5px]">EXP. DATE (MM/YY)</label>
+                    <div class="flex mr-5">
                         <input class="input p-3 w-1/2 mr-3" type="number" placeholder="MM"/>
                         <input class="input p-3 w-1/2" type="number" placeholder="YY"/>
                     </div>
