@@ -707,8 +707,8 @@ video {
   background-image: url('/images/bg-main-mobile.png');
 }
 
-.bg-\[url\(\'images\/bg-main-mobile\.png\'\)\] {
-  background-image: url('images/bg-main-mobile.png');
+.bg-background1 {
+  background-image: url('../images/bg-main-desktop.png');
 }
 
 .bg-cover {
@@ -745,18 +745,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.font-\[sp\] {
-  font-family: sp;
-}
-
-.font-\[space\] {
-  font-family: space;
-}
-
-.font-\[space-\] {
-  font-family: space-;
 }
 
 .text-2xl {
@@ -995,8 +983,8 @@ video {
     background-image: url('/images/bg-main-desktop.png');
   }
 
-  .md\:bg-\[url\(\'images\/bg-main-desktop\.png\'\)\] {
-    background-image: url('images/bg-main-desktop.png');
+  .md\:bg-background2 {
+    background-image: url('../images/bg-main-mobile.png');
   }
 }
 
