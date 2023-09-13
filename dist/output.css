@@ -707,6 +707,10 @@ video {
   background-image: url('/images/bg-main-mobile.png');
 }
 
+.bg-\[url\(\'images\/bg-main-mobile\.png\'\)\] {
+  background-image: url('images/bg-main-mobile.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -989,6 +993,10 @@ video {
 
   .md\:bg-\[url\(\'\/images\/bg-main-desktop\.png\'\)\] {
     background-image: url('/images/bg-main-desktop.png');
+  }
+
+  .md\:bg-\[url\(\'images\/bg-main-desktop\.png\'\)\] {
+    background-image: url('images/bg-main-desktop.png');
   }
 }
 
