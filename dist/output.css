@@ -703,10 +703,6 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/bg-main-mobile\.png\'\)\] {
-  background-image: url('/images/bg-main-mobile.png');
-}
-
 .bg-background1 {
   background-image: url('../images/bg-main-desktop.png');
 }
@@ -979,16 +975,8 @@ video {
     order: 2;
   }
 
-  .md\:h-4\/5 {
-    height: 80%;
-  }
-
   .md\:h-2\/5 {
     height: 40%;
-  }
-
-  .md\:bg-\[url\(\'\/images\/bg-main-desktop\.png\'\)\] {
-    background-image: url('/images/bg-main-desktop.png');
   }
 
   .md\:bg-background2 {
