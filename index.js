@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const changeCvc = document.querySelector('.change-cvc');
 
     function testName(valid) {
-        const str = holderName.value; /////////////////
+        const str = holderName.value; /////////////
         const pattern = /^[A-Za-z]+(\s)[A-Za-z]$/
         const testResult = pattern.test(str)
 
